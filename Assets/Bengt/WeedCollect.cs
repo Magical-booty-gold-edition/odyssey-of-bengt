@@ -14,16 +14,15 @@ public class WeedCollect : MonoBehaviour {
         if (collider2D.gameObject.CompareTag("White")) {
             _coinpickup.Play();
             Destroy(collider2D.gameObject);
-            mjol1.SetActive(true);
             _mjölAntal++;
-            if (_mjölAntal > 1)
+            print(_mjölAntal);
+             switch (_mjölAntal)
             {
-                mjol2.SetActive(true);
-            }
-            if (_mjölAntal > 2)
-            {
-                mjol3.SetActive(true);
+                case 1: mjol1.SetActive(true); break;
+                case 2: mjol2.SetActive(true); break;
+                case 3: mjol3.SetActive(true); break;
             }
         }
     }
-}
+}           
+
