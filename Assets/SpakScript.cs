@@ -5,13 +5,13 @@ using UnityEngine;
 public class SpakScript : MonoBehaviour
 {
     [SerializeField]
-    GameObject SpakAv;
-
-    [SerializeField]
     GameObject SpakPå;
 
-    public bool isPå = false;
-    bool atLever = false;
+    [SerializeField]
+    GameObject SpakAv;
+
+    public bool isPå = true;
+    bool atLever = true;
 
     void Start()
     {
@@ -22,7 +22,8 @@ public class SpakScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && atLever)  
         { 
-            gameObject.GetComponent<SpriteRenderer>().sprite = SpakPå.GetComponent<SpriteRenderer>().sprite; 
+            gameObject.GetComponent<SpriteRenderer>().sprite = SpakPå.GetComponent<SpriteRenderer>().sprite;
+            isPå = false;
         }
     }
 
