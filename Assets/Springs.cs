@@ -8,13 +8,13 @@ public class Springs : MonoBehaviour
     public float SpringJump = 20.0f;
     private void Start()
     {
-
+        _body = gameObject.GetComponent<Rigidbody2D>();
     }
-    private void OnTriggerEnter2D(Collider2D collider2D)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collider2D.gameObject.CompareTag("Spring"))
+        if (other.gameObject.CompareTag("Player"))
         {
-            _body.AddForce(Vector2.up * SpringJump, ForceMode2D.Impulse);
+            _body.AddForce(Vector3.up * SpringJump, ForceMode2D.Impulse);
         }
     }
 }

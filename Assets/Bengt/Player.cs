@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour{
     public float speed = 250.0f;
     public float jumpForce = 12.0f;
-    public float SpringJump = 23.0f;
+
     public short Health = 3;
     public GameObject Heart1;
     public GameObject Heart2;
@@ -87,9 +87,6 @@ public class Player : MonoBehaviour{
         Health -= Damage;
     }
     private void OnTriggerEnter2D(Collider2D collider2D){
-       if (collider2D.gameObject.CompareTag("Spring")) {
-           _body.AddForce(Vector2.up * SpringJump, ForceMode2D.Impulse);
-        }
        if (collider2D.gameObject.CompareTag("DmgObject"))
         {
             TakeDamage(1);
