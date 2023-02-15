@@ -5,16 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class NewLevel : MonoBehaviour
 {
-    public int sceneBuildIndex; 
+    public int sceneBuildIndex;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        print("Trigger funkar");
-
-        if (other.tag == "Bengt") {
-
-            print("Switching Scene to" + sceneBuildIndex);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+        print("Switching Scene to" + sceneBuildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
