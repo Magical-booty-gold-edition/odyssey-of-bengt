@@ -10,8 +10,11 @@ public class SpakScript : MonoBehaviour
     [SerializeField]
     GameObject SpakAv;
 
+    public GameObject Door;
+
     public bool isPå = true;
     bool atLever = true;
+    bool DoorOpen = false;
 
     void Start()
     {
@@ -24,6 +27,8 @@ public class SpakScript : MonoBehaviour
         { 
             gameObject.GetComponent<SpriteRenderer>().sprite = SpakPå.GetComponent<SpriteRenderer>().sprite;
             isPå = false;
+            DoorOpen = true;
+            Door.SetActive(false);
         }
     }
 
