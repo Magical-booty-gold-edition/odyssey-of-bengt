@@ -4,6 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Timeline;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour{
     public float speed = 250.0f;
@@ -77,7 +78,7 @@ public class Player : MonoBehaviour{
         }
         if (Health == 0)
         {
-            Application.Quit();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
             print("hej");
         }
     }
@@ -95,9 +96,9 @@ public class Player : MonoBehaviour{
             print(Health);
             switch (Health)
             {
-                case 1: Heart1.SetActive(false); NoHeart1.SetActive(true); break;
-                case 2: Heart2.SetActive(false); NoHeart2.SetActive(true); break;
-                case 3: Heart3.SetActive(false); NoHeart3.SetActive(true); break;
+                case 0: Heart1.SetActive(false); NoHeart1.SetActive(true); break;
+                case 1: Heart2.SetActive(false); NoHeart2.SetActive(true); break;
+                case 2: Heart3.SetActive(false); NoHeart3.SetActive(true); break;
             }
         }
     }
