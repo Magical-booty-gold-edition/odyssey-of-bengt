@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 33750683}
   m_Layer: 0
   m_Name: buske
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2602,6 +2602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 249908360}
   - component: {fileID: 249908361}
+  - component: {fileID: 249908362}
   m_Layer: 0
   m_Name: tile-forest-ground-2 (21)
   m_TagString: Untagged
@@ -2676,6 +2677,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &249908362
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249908359}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.5}
+    newSize: {x: 0.5, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &260506786
 GameObject:
   m_ObjectHideFlags: 0
@@ -2688,7 +2715,7 @@ GameObject:
   - component: {fileID: 260506788}
   m_Layer: 0
   m_Name: buske (22)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2987,7 +3014,7 @@ GameObject:
   - component: {fileID: 270608814}
   m_Layer: 0
   m_Name: buske (16)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3153,6 +3180,7 @@ GameObject:
   m_Component:
   - component: {fileID: 284281718}
   - component: {fileID: 284281719}
+  - component: {fileID: 284281720}
   m_Layer: 0
   m_Name: tile-forest-ground-2 (22)
   m_TagString: Untagged
@@ -3227,6 +3255,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &284281720
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284281717}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.5}
+    newSize: {x: 0.5, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &286632979
 GameObject:
   m_ObjectHideFlags: 0
@@ -5606,7 +5660,7 @@ GameObject:
   - component: {fileID: 379975810}
   m_Layer: 0
   m_Name: buske (8)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8294,6 +8348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 564955915}
   - component: {fileID: 564955916}
+  - component: {fileID: 564955917}
   m_Layer: 0
   m_Name: tile-forest-ground-2 (18)
   m_TagString: Untagged
@@ -8368,6 +8423,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &564955917
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564955914}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.5}
+    newSize: {x: 0.5, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &569043918
 GameObject:
   m_ObjectHideFlags: 0
@@ -8773,7 +8854,7 @@ GameObject:
   - component: {fileID: 604404248}
   m_Layer: 0
   m_Name: buske (14)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9172,7 +9253,7 @@ GameObject:
   - component: {fileID: 621120192}
   m_Layer: 0
   m_Name: buske (9)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12706,7 +12787,7 @@ GameObject:
   - component: {fileID: 876704748}
   m_Layer: 0
   m_Name: buske (7)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13812,7 +13893,7 @@ GameObject:
   - component: {fileID: 978175018}
   m_Layer: 0
   m_Name: buske (10)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14195,7 +14276,7 @@ GameObject:
   - component: {fileID: 1007611555}
   m_Layer: 0
   m_Name: buske (17)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15357,6 +15438,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1058559488}
   - component: {fileID: 1058559489}
+  - component: {fileID: 1058559490}
   m_Layer: 0
   m_Name: tile-forest-ground-2 (19)
   m_TagString: Untagged
@@ -15431,6 +15513,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1058559490
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058559487}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.5}
+    newSize: {x: 0.5, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &1063379945
 GameObject:
   m_ObjectHideFlags: 0
@@ -16363,7 +16471,7 @@ GameObject:
   - component: {fileID: 1137585087}
   m_Layer: 0
   m_Name: wine (2)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17391,7 +17499,7 @@ GameObject:
   - component: {fileID: 1202178276}
   m_Layer: 0
   m_Name: buske (13)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18847,7 +18955,7 @@ GameObject:
   - component: {fileID: 1315040459}
   m_Layer: 0
   m_Name: buske (15)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19146,7 +19254,7 @@ GameObject:
   - component: {fileID: 1358444370}
   m_Layer: 0
   m_Name: buske (4)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19791,7 +19899,7 @@ GameObject:
   - component: {fileID: 1417727609}
   m_Layer: 0
   m_Name: buske (3)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19875,7 +19983,7 @@ GameObject:
   - component: {fileID: 1418778662}
   m_Layer: 0
   m_Name: buske (19)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21074,7 +21182,7 @@ GameObject:
   - component: {fileID: 1450818423}
   m_Layer: 0
   m_Name: wine
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23160,7 +23268,7 @@ GameObject:
   - component: {fileID: 1578972896}
   m_Layer: 0
   m_Name: wine (3)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23244,7 +23352,7 @@ GameObject:
   - component: {fileID: 1582497276}
   m_Layer: 0
   m_Name: buske (12)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23328,7 +23436,7 @@ GameObject:
   - component: {fileID: 1598544969}
   m_Layer: 0
   m_Name: buske (21)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23584,7 +23692,7 @@ GameObject:
   - component: {fileID: 1623744263}
   m_Layer: 0
   m_Name: wine (4)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23779,7 +23887,7 @@ GameObject:
   - component: {fileID: 1626965447}
   m_Layer: 0
   m_Name: buske (6)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24424,7 +24532,7 @@ GameObject:
   - component: {fileID: 1690673009}
   m_Layer: 0
   m_Name: buske (20)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24854,7 +24962,7 @@ GameObject:
   - component: {fileID: 1724479635}
   m_Layer: 0
   m_Name: buske (1)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25436,7 +25544,7 @@ GameObject:
   - component: {fileID: 1772137237}
   m_Layer: 0
   m_Name: buske (5)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25518,6 +25626,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1783667326}
   - component: {fileID: 1783667327}
+  - component: {fileID: 1783667328}
   m_Layer: 0
   m_Name: tile-forest-ground-2 (20)
   m_TagString: Untagged
@@ -25592,6 +25701,32 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1783667328
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783667325}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.5}
+    newSize: {x: 0.5, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.5}
+  m_EdgeRadius: 0
 --- !u!1 &1797780409
 GameObject:
   m_ObjectHideFlags: 0
@@ -26380,7 +26515,7 @@ GameObject:
   - component: {fileID: 1863917760}
   m_Layer: 0
   m_Name: buske (18)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26894,7 +27029,7 @@ GameObject:
   - component: {fileID: 1896716395}
   m_Layer: 0
   m_Name: wine (6)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26978,7 +27113,7 @@ GameObject:
   - component: {fileID: 1900833626}
   m_Layer: 0
   m_Name: buske (11)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28247,7 +28382,7 @@ GameObject:
   - component: {fileID: 1961622147}
   m_Layer: 0
   m_Name: wine (1)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28499,7 +28634,7 @@ GameObject:
   - component: {fileID: 1972989535}
   m_Layer: 0
   m_Name: wine (7)
-  m_TagString: Untagged
+  m_TagString: DmgObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
