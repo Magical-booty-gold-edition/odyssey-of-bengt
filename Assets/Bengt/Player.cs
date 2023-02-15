@@ -10,11 +10,17 @@ public class Player : MonoBehaviour{
     public float jumpForce = 12.0f;
     public float SpringJump = 23.0f;
     public short Health = 3;
-
+    public GameObject Heart1;
+    public GameObject Heart2;
+    public GameObject Heart3;
+    public GameObject NoHeart1;
+    public GameObject NoHeart2;
+    public GameObject NoHeart3;
+    
     private Rigidbody2D _body;
     private Animator _anim;
     private BoxCollider2D _box;
-     AudioSource _jumpsound;
+    AudioSource _jumpsound;
     
     // Start is called before the first frame update
     void Start() {
@@ -69,9 +75,10 @@ public class Player : MonoBehaviour{
             transform.localScale = new Vector3(
                 Mathf.Sign(M) / pScale.x, 1 / pScale.y, 1);
         }
-        if (Health <= 0)
+        if (Health == 0)
         {
             Application.Quit();
+            print("hej");
         }
     }
     public void TakeDamage(short Damage)
@@ -85,6 +92,13 @@ public class Player : MonoBehaviour{
        if (collider2D.gameObject.CompareTag("DmgObject"))
         {
             TakeDamage(1);
+            print(Health);
+            switch (Health)
+            {
+                case 1: Heart1.SetActive(false); NoHeart1.SetActive(true); break;
+                case 2: Heart2.SetActive(false); NoHeart2.SetActive(true); break;
+                case 3: Heart3.SetActive(false); NoHeart3.SetActive(true); break;
+            }
         }
     }
 }
