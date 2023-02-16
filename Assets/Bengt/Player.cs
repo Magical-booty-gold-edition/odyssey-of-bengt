@@ -5,10 +5,12 @@ using UnityEngine;
 using UnityEngine.Timeline;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.Collections;
 
 public class Player : MonoBehaviour{
     public float speed = 250.0f;
     public float jumpForce = 12.0f;
+    public float Spring;
 
     public short Health = 3;
     public GameObject Heart1;
@@ -97,6 +99,13 @@ public class Player : MonoBehaviour{
                 case 1: Heart2.SetActive(false); NoHeart2.SetActive(true); break;
                 case 2: Heart3.SetActive(false); NoHeart3.SetActive(true); break;
             }
+        }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Spring"))
+        {
+            _body.velocity = Vector2.up * Spring;
         }
     }
 }
