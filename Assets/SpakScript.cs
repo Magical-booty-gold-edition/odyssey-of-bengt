@@ -21,7 +21,7 @@ public class SpakScript : MonoBehaviour
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = SpakAv.GetComponent<SpriteRenderer>().sprite; 
     }
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         atLever = true;
     }
