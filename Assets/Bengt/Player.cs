@@ -86,6 +86,11 @@ public class Player : MonoBehaviour{
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
             print("hej");
         }
+        if (grounded)
+        {
+            GetComponent<Animator>().SetBool("IsJumping", false);
+            IsJumping = false;
+        }
     }
     public void TakeDamage(short Damage)
     {
