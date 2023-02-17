@@ -12,6 +12,8 @@ public class SpakScript : MonoBehaviour
 
     public GameObject Door;
     public GameObject SpakText;
+    public GameObject Open_fac;
+    public GameObject Closed_fac;
 
     public bool isPå = true;
     bool atLever = false;
@@ -21,29 +23,31 @@ public class SpakScript : MonoBehaviour
     {
         gameObject.GetComponent<SpriteRenderer>().sprite = SpakAv.GetComponent<SpriteRenderer>().sprite; 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+
+    private void OnTriggerEnter2D()
     {
+        SpakText.SetActive(true);
         atLever = true;
     }
 
-    void FixedUpdate()
+    private void OnTriggerExit2D()
     {
-        if (atLever)
-        {
-            SpakText.SetActive(true);
-        }
-        if (Input.GetKeyDown(KeyCode.E) && atLever)  
-        { 
-            gameObject.GetComponent<SpriteRenderer>().sprite = SpakPå.GetComponent<SpriteRenderer>().sprite;
-            isPå = false;
-            DoorOpen = true;
-            Door.SetActive(false);
-        }
-    }
-
-    void onTriggerExit2D()
-    {
+        SpakText.SetActive(false);
         atLever = false;
     }
-    
+
+
+    void FixedUpdate()
+    { 
+        if (atLever && Input.GetKeyDown(KeyCode.E))
+            {
+                gameObject.GetComponent<SpriteRenderer>().sprite = SpakPå.GetComponent<SpriteRenderer>().sprite;
+                isPå = false;
+                DoorOpen = true;
+                Door.SetActive(false);
+                Closed_fac.SetActive(false);
+                Open_fac.SetActive(true);
+            }
+        
+    }
 }

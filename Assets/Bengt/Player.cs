@@ -19,6 +19,7 @@ public class Player : MonoBehaviour{
     public GameObject NoHeart1;
     public GameObject NoHeart2;
     public GameObject NoHeart3;
+    private bool IsJumping = false;
     
     private Rigidbody2D _body;
     private Animator _anim;
@@ -56,6 +57,8 @@ public class Player : MonoBehaviour{
         if (grounded && Input.GetKeyDown(KeyCode.Space)) {
             _body.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             _jumpsound.Play();
+            GetComponent<Animator>().SetBool("IsJumping", true);
+            IsJumping = true;
         }
         //checks if the platform is moving or not.
         MovingPlatforms platform = null;
