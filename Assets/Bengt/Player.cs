@@ -85,7 +85,6 @@ public class Player : MonoBehaviour{
         if (Health == 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
-            print("hej");
         }
         
     }
