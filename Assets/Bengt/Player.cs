@@ -35,6 +35,7 @@ public class Player : MonoBehaviour{
     }
     // Update is called once per frame
     void Update() {
+        print(IsJumping);
         float M = Input.GetAxis("Horizontal") * speed;
          Vector2 movement = new Vector2(M, _body.velocity.y);
         _body.velocity = movement;
@@ -57,8 +58,8 @@ public class Player : MonoBehaviour{
         if (grounded && Input.GetKeyDown(KeyCode.Space)) {
             _body.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             _jumpsound.Play();
-            GetComponent<Animator>().SetBool("IsJumping", true);
-            IsJumping = true;
+       //     GetComponent<Animator>().SetBool("IsJumping", true);
+       //     IsJumping = true;
         }
         //checks if the platform is moving or not.
         MovingPlatforms platform = null;
@@ -86,11 +87,7 @@ public class Player : MonoBehaviour{
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
             print("hej");
         }
-        if (grounded)
-        {
-            GetComponent<Animator>().SetBool("IsJumping", false);
-            IsJumping = false;
-        }
+        
     }
     public void TakeDamage(short Damage)
     {
