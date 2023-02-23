@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Meny.unity
     guid: f2456b9e893426d43af970ce55695fcd
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Skog.unity
     guid: 417adeccb2c08a84bb96af65f70287bb
   - enabled: 1
     path: Assets/Scenes/Factory.unity

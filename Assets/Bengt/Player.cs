@@ -20,6 +20,7 @@ public class Player : MonoBehaviour{
     public GameObject NoHeart2;
     public GameObject NoHeart3;
     private bool IsJumping = false;
+    private bool IsShooting = false;
     
     private Rigidbody2D _body;
     private Animator _anim;
@@ -85,6 +86,14 @@ public class Player : MonoBehaviour{
         if (Health == 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
+        }
+        if (Input.GetButtonDown("Fire1"))
+        {
+            IsShooting = true;
+        }
+        else
+        {
+            IsShooting = false;
         }
         
     }

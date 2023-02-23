@@ -26,6 +26,7 @@ public class MovingPlatforms : MonoBehaviour {
             _direction *= -1;
         }
     }
+    //Draws a red line on the path which the platform is gonna move on.
     private void OnDrawGizmos(){
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, finishPos);
