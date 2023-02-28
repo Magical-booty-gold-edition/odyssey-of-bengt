@@ -9,6 +9,7 @@ public class Gun : MonoBehaviour
     public GameObject BulletPrefab;
     public GameObject gunis;
     GameObject Lastbulletmade;
+    bool cooldown = false;
 
     private void Update()
     {
@@ -16,8 +17,9 @@ public class Gun : MonoBehaviour
         {
             Shoot();
             gunis.SetActive(true);
+            cool_downie(0.5f);
         }
-        else
+        else if (!cooldown)
         {
             gunis.SetActive(false);
         }
@@ -26,5 +28,16 @@ public class Gun : MonoBehaviour
     {
         //shooting logic
         Lastbulletmade = Instantiate(BulletPrefab, SpawnPos.position, SpawnPos.rotation);
+    }
+    
+    void end_cooldown()
+    {
+        cooldown = false;
+    }
+    
+    void cool_downie(float duration)
+    {
+        cooldown = true;
+        Invoke("end_cooldown", duration);
     }
 }
