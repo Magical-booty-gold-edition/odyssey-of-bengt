@@ -83,7 +83,7 @@ public class Player : MonoBehaviour{
             transform.localScale = new Vector3(
                 Mathf.Sign(M) / pScale.x, 1 / pScale.y, 1);
         }
-        if (Health == 0)
+        if (Health <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 0);
         }
