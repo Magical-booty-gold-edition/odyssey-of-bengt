@@ -14692,6 +14692,7 @@ GameObject:
   - component: {fileID: 1118845355}
   - component: {fileID: 1118845354}
   - component: {fileID: 1118845357}
+  - component: {fileID: 1118845358}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: DmgObject
@@ -14808,6 +14809,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.28630066, y: 1.6027853}
   m_EdgeRadius: 0
+--- !u!95 &1118845358
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1118845352}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 057002787b36c294fb601a0059bebdda, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1126135814
 GameObject:
   m_ObjectHideFlags: 0

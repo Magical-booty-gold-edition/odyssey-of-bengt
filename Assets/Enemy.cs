@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -39,10 +40,6 @@ public class Enemy : MonoBehaviour
                 && _trackPercent < .1f))
         {
             _direction *= -1;
-        }
-        if (!Mathf.Approximately(speed, 0))
-        {
-            transform.localScale = new Vector3(Mathf.Sign(speed), 1, 1); //when moving scale postive or negative 1 to face left or right.
         }
     }
     private void OnDrawGizmos()

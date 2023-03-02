@@ -121,4 +121,8 @@ public class Player : MonoBehaviour{
             _body.velocity = Vector2.up * Spring;
         }
     }
+    private void Flip()
+    {
+
+    }
 }
