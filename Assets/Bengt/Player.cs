@@ -35,6 +35,11 @@ public class Player : MonoBehaviour{
         _box = GetComponent<BoxCollider2D>();
         _jumpsound = GetComponent<AudioSource>();
     }
+    private void Flip()
+    {
+        _bodyFacingRight = !_bodyFacingRight;
+        transform.Rotate(0f, 180f, 0f);
+    }
     // Update is called once per frame
     void Update() {
         print(IsJumping);
@@ -122,17 +127,5 @@ public class Player : MonoBehaviour{
                 case 2: Heart3.SetActive(false); NoHeart3.SetActive(true); break;
             }
         }
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Spring"))
-        {
-            _body.velocity = Vector2.up * Spring;
-        }
-    }
-    private void Flip()
-    {
-        _bodyFacingRight = !_bodyFacingRight;
-        transform.Rotate(0f, 180f, 0f);
     }
 }
