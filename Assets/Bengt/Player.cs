@@ -21,6 +21,7 @@ public class Player : MonoBehaviour{
     public GameObject NoHeart3;
     private bool IsJumping = false;
     private bool IsShooting = false;
+    private bool _bodyFacingRight = true;
     
     private Rigidbody2D _body;
     private Animator _anim;
@@ -47,10 +48,18 @@ public class Player : MonoBehaviour{
         Collider2D hit = Physics2D.OverlapArea(corner1, corner2); 
         bool grounded = false; //changes to true if the player is on the ground and majes them 
         //able to jump.
-        if (!Mathf.Approximately(M, 0)) {
-            transform.localScale = new Vector3(Mathf.Sign(M), 1, 1); //when moving scale postive or negative 1 to face left or right.
-        }                                                                  //detects if the player is on the ground or in the air.
-            //detects if the player is grounded or not by using the hit variable. 
+        if (M > 0 && !_bodyFacingRight)
+        {
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, -180, transform.eulerAngles.z);
+            //Flip();
+        }
+        else if (M < 0 && _bodyFacingRight)
+        {
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, 0, transform.eulerAngles.z);
+            //Flip();
+        }
+                                                                          
+        //detects if the player is grounded or not by using the hit variable. 
         if (hit != null) {
             grounded = true;
         }
@@ -123,6 +132,7 @@ public class Player : MonoBehaviour{
     }
     private void Flip()
     {
-
+        _bodyFacingRight = !_bodyFacingRight;
+        transform.Rotate(0f, 180f, 0f);
     }
 }

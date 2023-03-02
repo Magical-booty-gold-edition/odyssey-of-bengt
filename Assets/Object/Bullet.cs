@@ -8,8 +8,17 @@ public class Bullet : MonoBehaviour
     public Rigidbody2D rb;
     void Start()
     {
+        if(GameObject.Find("Bengt").GetComponent<SpriteRenderer>().flipX)
+        {
+            rb.velocity = Vector2.right * speed;
+        }
+
+        else
+        {
+            rb.velocity = Vector2.left * speed;
+        }
         //Tells the bullet to move right in according to the speed variable. 
-        rb.velocity = transform.right * speed;
+        
     }
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {

@@ -6,6 +6,7 @@ using UnityEngine;
 public class Gun : MonoBehaviour
 {
     public Transform SpawnPos;
+    public Transform Bengt;
     public GameObject BulletPrefab;
     public GameObject gunis;
     GameObject Lastbulletmade;
@@ -14,7 +15,7 @@ public class Gun : MonoBehaviour
     private void Update()
     {
         if (Input.GetButtonDown("Fire1")) 
-        {
+        {   
             Shoot();
             gunis.SetActive(true);
             cool_downie(0.5f);
@@ -27,7 +28,7 @@ public class Gun : MonoBehaviour
     void Shoot()
     {
         //shooting logic
-        Lastbulletmade = Instantiate(BulletPrefab, SpawnPos.position, SpawnPos.rotation);
+        Lastbulletmade = Instantiate(BulletPrefab, transform.GetChild(0).transform.position, SpawnPos.rotation, Bengt);
     }
     
     void end_cooldown()
