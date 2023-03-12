@@ -9,6 +9,9 @@ TagManager:
   - Spring
   - DmgObject
   - Gun
+  - Tut1
+  - Tut2
+  - GunTut
   layers:
   - Default
   - TransparentFX

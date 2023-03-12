@@ -19,6 +19,9 @@ public class Player : MonoBehaviour{
     public GameObject NoHeart1;
     public GameObject NoHeart2;
     public GameObject NoHeart3;
+    public GameObject Tut1;
+    public GameObject Tut2;
+    public GameObject GunTut;
     private bool IsJumping = false;
     private bool IsShooting = false;
     private bool _bodyFacingRight = true;
@@ -126,6 +129,33 @@ public class Player : MonoBehaviour{
                 case 1: Heart2.SetActive(false); NoHeart2.SetActive(true); break;
                 case 2: Heart3.SetActive(false); NoHeart3.SetActive(true); break;
             }
+        }
+       if (collider2D.gameObject.CompareTag("Tut1"))
+        {
+            Tut1.SetActive(true);
+        }
+        if (collider2D.gameObject.CompareTag("Tut2"))
+        {
+            Tut2.SetActive(true);
+        }
+        if (collider2D.gameObject.CompareTag("GunTut"))
+        {
+            GunTut.SetActive(true);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Tut1"))
+        {
+            Tut1.SetActive(false);
+        }
+        if (collision.gameObject.CompareTag("Tut2"))
+        {
+            Tut2.SetActive(false);
+        }
+        if (collision.gameObject.CompareTag("GunTut"))
+        {
+            GunTut.SetActive(false);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
